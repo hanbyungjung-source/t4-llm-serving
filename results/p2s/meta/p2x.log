@@ -1,0 +1,45 @@
+KILLED_P2W 134 12:09:15
+PAUSED 122 12:09:15
+STAGE v050-layer-mmq1
+COOL p2-v050-layer-mmq1 [53, 55] 150.6
+CASE p2-v050-layer-mmq1 warmup 5.986 False
+CASE p2-v050-layer-mmq1 copy 8.565 True
+CASE p2-v050-layer-mmq1 arithmetic 4.351 True
+CASE p2-v050-layer-mmq1 image 8.754 True
+SUMMARY p2-v050-layer-mmq1 {"all_passed": false, "scored_seconds": 21.6703919950005, "decode_tps": 24.540607838786055, "completion_tokens": [198, 83, 74], "prompt_tokens": [953, 829, 1760], "draft_n": 297, "draft_accepted": 256, "case_seconds": {"copy": 8.565, "arithmetic": 4.351, "image": 8.754}, "prompt_ms": {"copy": 1269.399, "arithmetic": 702.765, "image": 5289.879}} None
+STAGE_DONE v050-layer-mmq1 1
+STAGE v050-tensor-mmq1
+COOL p2-v050-tensor-mmq1 [52, 55] 90.4
+CASE p2-v050-tensor-mmq1 warmup 4.359 True
+CASE p2-v050-tensor-mmq1 copy 7.625 True
+CASE p2-v050-tensor-mmq1 arithmetic 3.431 True
+CASE p2-v050-tensor-mmq1 image 5.976 True
+SUMMARY p2-v050-tensor-mmq1 {"all_passed": true, "scored_seconds": 17.0317711900002, "decode_tps": 33.45470952411749, "completion_tokens": [238, 74, 65], "prompt_tokens": [953, 829, 1760], "draft_n": 315, "draft_accepted": 271, "case_seconds": {"copy": 7.625, "arithmetic": 3.431, "image": 5.976}, "prompt_ms": {"copy": 1143.319, "arithmetic": 695.055, "image": 3949.34}} None
+STAGE_DONE v050-tensor-mmq1 0
+STAGE v050-tensor-selfmtp-mmq1
+COOL p2-v050-tensor-selfmtp-mmq1 [52, 55] 80.4
+CASE p2-v050-tensor-selfmtp-mmq1 warmup 4.217 True
+CASE p2-v050-tensor-selfmtp-mmq1 copy 7.153 True
+CASE p2-v050-tensor-selfmtp-mmq1 arithmetic 2.957 True
+CASE p2-v050-tensor-selfmtp-mmq1 image 5.753 True
+SUMMARY p2-v050-tensor-selfmtp-mmq1 {"all_passed": true, "scored_seconds": 15.863919225000245, "decode_tps": 37.175526734471916, "completion_tokens": [238, 74, 65], "prompt_tokens": [953, 829, 1760], "draft_n": 312, "draft_accepted": 272, "case_seconds": {"copy": 7.153, "arithmetic": 2.957, "image": 5.753}, "prompt_ms": {"copy": 1132.236, "arithmetic": 681.725, "image": 3925.098}} None
+STAGE_DONE v050-tensor-selfmtp-mmq1 0
+TIMED3 1 12:16:19
+B11000 0 12:33:19
+STAGE b11000-base2
+COOL p2-b11000-base2 [38, 40] 0.0
+CASE p2-b11000-base2 warmup 5.385 True
+CASE p2-b11000-base2 copy 10.815 True
+CASE p2-b11000-base2 arithmetic 6.306 True
+CASE p2-b11000-base2 image 8.176 True
+SUMMARY p2-b11000-base2 {"all_passed": true, "scored_seconds": 25.29630449599972, "decode_tps": 23.4603618047154, "completion_tokens": [238, 125, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 360, "draft_accepted": 312, "case_seconds": {"copy": 10.815, "arithmetic": 6.306, "image": 8.176}, "prompt_ms": {"copy": 1225.91, "arithmetic": 686.187, "image": 5032.413}} None
+STAGE_DONE b11000-base2 0
+STAGE v050-layer-ref2
+COOL p2-v050-layer-ref2 [53, 55] 0.0
+CASE p2-v050-layer-ref2 warmup 5.616 True
+CASE p2-v050-layer-ref2 copy 11.28 True
+CASE p2-v050-layer-ref2 arithmetic 6.71 True
+CASE p2-v050-layer-ref2 image 8.532 True
+SUMMARY p2-v050-layer-ref2 {"all_passed": true, "scored_seconds": 26.521671699000763, "decode_tps": 22.226360090036966, "completion_tokens": [238, 125, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 360, "draft_accepted": 312, "case_seconds": {"copy": 11.28, "arithmetic": 6.71, "image": 8.532}, "prompt_ms": {"copy": 1275.008, "arithmetic": 699.66, "image": 5179.056}} None
+STAGE_DONE v050-layer-ref2 0
+TIMED4 0 12:34:42

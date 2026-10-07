@@ -1,0 +1,98 @@
+P2X 0 12:34:51
+STAGE ext-b11000-base
+COOL p5-ext-b11000-base [53, 54] 40.2
+CASE p5-ext-b11000-base ext00 5.98 True
+CASE p5-ext-b11000-base ext01 3.091 True
+CASE p5-ext-b11000-base ext02 4.674 True
+CASE p5-ext-b11000-base ext03 3.604 True
+CASE p5-ext-b11000-base ext04 5.408 True
+CASE p5-ext-b11000-base ext05 4.348 True
+CASE p5-ext-b11000-base ext06 5.013 True
+CASE p5-ext-b11000-base ext07 4.215 True
+CASE p5-ext-b11000-base ext08 4.253 True
+CASE p5-ext-b11000-base ext09 4.137 True
+CASE p5-ext-b11000-base ext10 4.105 True
+CASE p5-ext-b11000-base ext11 4.386 True
+CASE p5-ext-b11000-base ext12 2.911 True
+CASE p5-ext-b11000-base ext13 5.884 True
+CASE p5-ext-b11000-base ext14 6.728 True
+CASE p5-ext-b11000-base ext15 3.667 True
+CASE p5-ext-b11000-base ext16 6.264 True
+CASE p5-ext-b11000-base ext17 7.448 True
+CASE p5-ext-b11000-base ext18 3.917 True
+CASE p5-ext-b11000-base ext19 4.468 True
+SUMMARY p5-ext-b11000-base {"all_passed": true, "scored_seconds": 94.50136402699627, "decode_tps": 18.767470579594427, "completion_tokens": [60, 51, 90, 66, 107, 81, 91, 68, 62, 63, 65, 69, 44, 95, 96, 56, 97, 110, 53, 65], "prompt_tokens": [809, 810, 809, 812, 814, 811, 813, 808, 807, 810, 813, 819, 813, 811, 809, 808, 813, 813, 817, 811], "draft_n": 1278, "draft_accepted": 1056, "case_seconds": {"ext00": 5.98, "ext01": 3.091, "ext02": 4.674, "ext03": 3.604, "ext04": 5.408, "ext05": 4.348, "ext06": 5.013, "ext07": 4.215, "ext08": 4.253, "ext09": 4.137, "ext10": 4.105, "ext11": 4.386, "ext12": 2.911, "ext13": 5.884, "ext14": 6.728, "ext15": 3.667, "ext16": 6.264, "ext17": 7.448, "ext18": 3.917, "ext19": 4.468}, "prompt_ms": {"ext00": 3349.223, "ext01": 628.092, "ext02": 611.322, "ext03": 626.467, "ext04": 663.678, "ext05": 624.952, "ext06": 669.597, "ext07": 657.188, "ext08": 630.528, "ext09": 651.965, "ext10": 667.803, "ext11": 687.968, "ext12": 676.573, "ext13": 675.571, "ext14": 670.529, "ext15": 671.105, "ext16": 722.837, "ext17": 732.356, "ext18": 727.028, "ext19": 701.895}} None
+STAGE_DONE ext-b11000-base 0
+STAGE ext-v050-layer
+COOL p5-ext-v050-layer [52, 55] 160.7
+CASE p5-ext-v050-layer ext00 5.989 True
+CASE p5-ext-v050-layer ext01 3.158 True
+CASE p5-ext-v050-layer ext02 4.714 True
+CASE p5-ext-v050-layer ext03 3.701 True
+CASE p5-ext-v050-layer ext04 5.69 True
+CASE p5-ext-v050-layer ext05 4.472 True
+CASE p5-ext-v050-layer ext06 5.047 True
+CASE p5-ext-v050-layer ext07 4.265 True
+CASE p5-ext-v050-layer ext08 4.243 True
+CASE p5-ext-v050-layer ext09 4.065 True
+CASE p5-ext-v050-layer ext10 4.123 True
+CASE p5-ext-v050-layer ext11 4.398 True
+CASE p5-ext-v050-layer ext12 2.9 True
+CASE p5-ext-v050-layer ext13 6.171 True
+CASE p5-ext-v050-layer ext14 6.933 True
+CASE p5-ext-v050-layer ext15 3.822 True
+CASE p5-ext-v050-layer ext16 6.422 True
+CASE p5-ext-v050-layer ext17 7.621 True
+CASE p5-ext-v050-layer ext18 3.951 True
+CASE p5-ext-v050-layer ext19 4.652 True
+SUMMARY p5-ext-v050-layer {"all_passed": true, "scored_seconds": 96.33653710700037, "decode_tps": 18.394715354802692, "completion_tokens": [60, 51, 90, 66, 107, 81, 91, 68, 62, 63, 65, 69, 44, 95, 96, 56, 97, 110, 53, 65], "prompt_tokens": [809, 810, 809, 812, 814, 811, 813, 808, 807, 810, 813, 819, 813, 811, 809, 808, 813, 813, 817, 811], "draft_n": 1278, "draft_accepted": 1056, "case_seconds": {"ext00": 5.989, "ext01": 3.158, "ext02": 4.714, "ext03": 3.701, "ext04": 5.69, "ext05": 4.472, "ext06": 5.047, "ext07": 4.265, "ext08": 4.243, "ext09": 4.065, "ext10": 4.123, "ext11": 4.398, "ext12": 2.9, "ext13": 6.171, "ext14": 6.933, "ext15": 3.822, "ext16": 6.422, "ext17": 7.621, "ext18": 3.951, "ext19": 4.652}, "prompt_ms": {"ext00": 3370.139, "ext01": 629.715, "ext02": 636.274, "ext03": 625.177, "ext04": 660.295, "ext05": 657.748, "ext06": 665.387, "ext07": 652.155, "ext08": 669.864, "ext09": 664.112, "ext10": 679.875, "ext11": 687.053, "ext12": 685.675, "ext13": 664.372, "ext14": 693.505, "ext15": 707.686, "ext16": 736.927, "ext17": 733.013, "ext18": 729.978, "ext19": 726.662}} None
+STAGE_DONE ext-v050-layer 0
+STAGE ext-v050-tensor-selfmtp
+COOL p5-ext-v050-tensor-selfmtp [51, 55] 160.7
+CASE p5-ext-v050-tensor-selfmtp ext00 4.418 True
+CASE p5-ext-v050-tensor-selfmtp ext01 2.212 True
+CASE p5-ext-v050-tensor-selfmtp ext02 3.525 True
+CASE p5-ext-v050-tensor-selfmtp ext03 2.609 True
+CASE p5-ext-v050-tensor-selfmtp ext04 2.518 True
+CASE p5-ext-v050-tensor-selfmtp ext05 2.446 True
+CASE p5-ext-v050-tensor-selfmtp ext06 3.365 True
+CASE p5-ext-v050-tensor-selfmtp ext07 3.984 True
+CASE p5-ext-v050-tensor-selfmtp ext08 3.019 True
+CASE p5-ext-v050-tensor-selfmtp ext09 2.853 True
+CASE p5-ext-v050-tensor-selfmtp ext10 2.998 True
+CASE p5-ext-v050-tensor-selfmtp ext11 3.033 True
+CASE p5-ext-v050-tensor-selfmtp ext12 2.132 True
+CASE p5-ext-v050-tensor-selfmtp ext13 4.353 True
+CASE p5-ext-v050-tensor-selfmtp ext14 4.395 True
+CASE p5-ext-v050-tensor-selfmtp ext15 2.841 True
+CASE p5-ext-v050-tensor-selfmtp ext16 4.204 True
+CASE p5-ext-v050-tensor-selfmtp ext17 4.862 True
+CASE p5-ext-v050-tensor-selfmtp ext18 2.76 True
+CASE p5-ext-v050-tensor-selfmtp ext19 3.045 True
+SUMMARY p5-ext-v050-tensor-selfmtp {"all_passed": true, "scored_seconds": 65.5712621290013, "decode_tps": 28.430122648026586, "completion_tokens": [49, 51, 90, 66, 64, 59, 91, 100, 62, 63, 65, 69, 44, 95, 93, 61, 99, 110, 53, 65], "prompt_tokens": [809, 810, 809, 812, 814, 811, 813, 808, 807, 810, 813, 819, 813, 811, 809, 808, 813, 813, 817, 811], "draft_n": 1245, "draft_accepted": 1031, "case_seconds": {"ext00": 4.418, "ext01": 2.212, "ext02": 3.525, "ext03": 2.609, "ext04": 2.518, "ext05": 2.446, "ext06": 3.365, "ext07": 3.984, "ext08": 3.019, "ext09": 2.853, "ext10": 2.998, "ext11": 3.033, "ext12": 2.132, "ext13": 4.353, "ext14": 4.395, "ext15": 2.841, "ext16": 4.204, "ext17": 4.862, "ext18": 2.76, "ext19": 3.045}, "prompt_ms": {"ext00": 2888.678, "ext01": 615.964, "ext02": 620.928, "ext03": 625.54, "ext04": 643.492, "ext05": 635.716, "ext06": 644.312, "ext07": 634.478, "ext08": 631.771, "ext09": 629.254, "ext10": 663.255, "ext11": 671.248, "ext12": 650.4, "ext13": 643.612, "ext14": 645.926, "ext15": 641.741, "ext16": 652.399, "ext17": 667.569, "ext18": 661.858, "ext19": 648.849}} None
+STAGE_DONE ext-v050-tensor-selfmtp 0
+STAGE ext-v050-tensor-selfmtp-mmq1
+COOL p5-ext-v050-tensor-selfmtp-mmq1 [52, 55] 150.7
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext00 4.253 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext01 2.109 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext02 3.241 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext03 2.382 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext04 2.288 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext05 2.4 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext06 3.108 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext07 3.56 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext08 3.316 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext09 2.454 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext10 2.846 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext11 2.596 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext12 1.904 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext13 3.784 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext14 3.565 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext15 2.304 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext16 2.326 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext17 4.419 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext18 2.238 True
+CASE p5-ext-v050-tensor-selfmtp-mmq1 ext19 2.393 True
+SUMMARY p5-ext-v050-tensor-selfmtp-mmq1 {"all_passed": true, "scored_seconds": 57.4857673280012, "decode_tps": 34.11269453691934, "completion_tokens": [49, 51, 90, 66, 64, 59, 91, 100, 82, 63, 74, 69, 44, 95, 94, 58, 63, 133, 53, 65], "prompt_tokens": [809, 810, 809, 812, 814, 811, 813, 808, 807, 810, 813, 819, 813, 811, 809, 808, 813, 813, 817, 811], "draft_n": 1269, "draft_accepted": 1036, "case_seconds": {"ext00": 4.253, "ext01": 2.109, "ext02": 3.241, "ext03": 2.382, "ext04": 2.288, "ext05": 2.4, "ext06": 3.108, "ext07": 3.56, "ext08": 3.316, "ext09": 2.454, "ext10": 2.846, "ext11": 2.596, "ext12": 1.904, "ext13": 3.784, "ext14": 3.565, "ext15": 2.304, "ext16": 2.326, "ext17": 4.419, "ext18": 2.238, "ext19": 2.393}, "prompt_ms": {"ext00": 2836.01, "ext01": 629.99, "ext02": 625.139, "ext03": 639.242, "ext04": 641.694, "ext05": 625.033, "ext06": 651.457, "ext07": 627.658, "ext08": 648.257, "ext09": 647.869, "ext10": 640.133, "ext11": 654.116, "ext12": 646.126, "ext13": 629.263, "ext14": 630.117, "ext15": 626.441, "ext16": 650.797, "ext17": 648.593, "ext18": 655.426, "ext19": 643.309}} None
+STAGE_DONE ext-v050-tensor-selfmtp-mmq1 0
+EXT 0 12:49:20

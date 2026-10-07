@@ -1,0 +1,116 @@
+{
+  "args": {
+    "model_dir": "models/exl3-5.0",
+    "gpu_split": "14,15",
+    "load_metrics": false,
+    "override": null,
+    "tensor_parallel": false,
+    "moe_cpu_offload": 0,
+    "moe_cpu_split": 0,
+    "moe_cpu_threads": null,
+    "ngram_ram": false,
+    "tp_backend": "native",
+    "tp_max_parallelism_attn": null,
+    "tp_max_parallelism_mlp": null,
+    "tp_max_parallelism_moe": null,
+    "tp_max_parallelism_linear": null,
+    "tp_max_parallelism_linear_attn": null,
+    "tp_moe_tensor_split": false,
+    "swa_full": false,
+    "autosplit_max_batch_size": 1,
+    "chunk_size": 4096,
+    "load_verbose": false,
+    "autosplit_no_forward": false,
+    "no_warmup": false,
+    "layer_map": null,
+    "cache_size": 8192,
+    "cache_quant": "8",
+    "cache_compand_a": 0.0,
+    "cpu_cache_size": 0.0,
+    "recurrent_cache_size": 4.0,
+    "draft_model_dir": null,
+    "num_draft_tokens": null,
+    "mtp": false,
+    "ngram_match_min": 0,
+    "dynamic_draft": false,
+    "draft_confidence": 0.4,
+    "draft_moe_cpu_layers": 0,
+    "out": "results/p3-exl3-layer-nomtp.json",
+    "max_new": 320,
+    "prefill_repeat": 120
+  },
+  "load_seconds": 229.15241146087646,
+  "gpu_used_after_load": [
+    14797,
+    4739
+  ],
+  "warm_cases": {
+    "copy": {
+      "new_tokens": 186,
+      "time_prefill": 1.8747379779815674,
+      "time_generate": 27.953957557678223,
+      "decode_tps": 6.618025358959785,
+      "accepted": null,
+      "rejected": null,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\nThe user wants me to return exactly the records they specified, preserving every line and adding no other text. Let me simply output those lines exactly as given.\n</think>\n\nROW01:READY\nROW02:R"
+    },
+    "arithmetic": {
+      "new_tokens": 8,
+      "time_prefill": 0.9992475509643555,
+      "time_generate": 1.1545956134796143,
+      "decode_tps": 6.062728732273668,
+      "accepted": null,
+      "rejected": null,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\n\n</think>\n\n141"
+    }
+  },
+  "cases": {
+    "copy": {
+      "new_tokens": 186,
+      "time_prefill": 1.2914133071899414,
+      "time_generate": 27.964020490646362,
+      "decode_tps": 6.615643843555341,
+      "accepted": null,
+      "rejected": null,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\nThe user wants me to return exactly the records they specified, preserving every line and adding no other text. Let me simply output those lines exactly as given.\n</think>\n\nROW01:READY\nROW02:R"
+    },
+    "arithmetic": {
+      "new_tokens": 8,
+      "time_prefill": 0.6850607395172119,
+      "time_generate": 1.1044554710388184,
+      "decode_tps": 6.337964891799581,
+      "accepted": null,
+      "rejected": null,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\n\n</think>\n\n141"
+    }
+  },
+  "warm_prefill": {
+    "new_tokens": 2,
+    "time_prefill": 15.805707216262817,
+    "time_generate": 0.2624483108520508,
+    "decode_tps": 3.810274094557717,
+    "accepted": null,
+    "rejected": null,
+    "eos_reason": "max_new_tokens",
+    "text_head": "<think>\n\n"
+  },
+  "prefill_prompt_tokens": 1720,
+  "prefill": {
+    "new_tokens": 2,
+    "time_prefill": 13.162423133850098,
+    "time_generate": 0.26031970977783203,
+    "decode_tps": 3.841430219991574,
+    "accepted": null,
+    "rejected": null,
+    "eos_reason": "max_new_tokens",
+    "text_head": "<think>\n\n"
+  },
+  "gpu_used_end": [
+    14801,
+    4743
+  ]
+}

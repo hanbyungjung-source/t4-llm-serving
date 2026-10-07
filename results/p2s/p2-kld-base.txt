@@ -1,0 +1,28 @@
+2.60 minutes
+[1]4.3584,[2]6.1310,[3]5.9101,[4]5.8332,[5]5.8190,[6]6.0456,[7]6.1892,[8]6.6544,
+
+
+--- stderr ---
+0.01.917.614 W model has unused tensor blk.64.attn_norm.weight (size = 20480 bytes) -- ignoring
+0.01.917.645 W model has unused tensor blk.64.post_attention_norm.weight (size = 20480 bytes) -- ignoring
+0.01.917.673 W model has unused tensor blk.64.attn_q.weight (size = 51609600 bytes) -- ignoring
+0.01.917.696 W model has unused tensor blk.64.attn_k.weight (size = 5570560 bytes) -- ignoring
+0.01.917.716 W model has unused tensor blk.64.attn_v.weight (size = 5570560 bytes) -- ignoring
+0.01.917.761 W model has unused tensor blk.64.attn_output.weight (size = 25804800 bytes) -- ignoring
+0.01.917.790 W model has unused tensor blk.64.attn_q_norm.weight (size = 1024 bytes) -- ignoring
+0.01.917.803 W model has unused tensor blk.64.attn_k_norm.weight (size = 1024 bytes) -- ignoring
+0.01.917.815 W model has unused tensor blk.64.ffn_gate.weight (size = 73113600 bytes) -- ignoring
+0.01.917.833 W model has unused tensor blk.64.ffn_down.weight (size = 73113600 bytes) -- ignoring
+0.01.917.852 W model has unused tensor blk.64.ffn_up.weight (size = 73113600 bytes) -- ignoring
+0.01.917.866 W model has unused tensor blk.64.nextn.eh_proj.weight (size = 43008000 bytes) -- ignoring
+0.01.917.885 W model has unused tensor blk.64.nextn.enorm.weight (size = 20480 bytes) -- ignoring
+0.01.917.906 W model has unused tensor blk.64.nextn.hnorm.weight (size = 20480 bytes) -- ignoring
+0.01.917.942 W model has unused tensor blk.64.nextn.shared_head_norm.weight (size = 20480 bytes) -- ignoring
+0.07.825.493 I cmn          init: llama threadpool init, n_threads = 2
+0.08.147.212 I 
+0.08.147.310 I system_info: n_threads = 2 (n_threads_batch = 2) / 4 | CUDA : ARCHS = 750 | USE_GRAPHS = 1 | FA_QUANTS = q4_0-q4_0,q8_0-q8_0,f16-f16,bf16-bf16 | CPU : SSE3 = 1 | SSSE3 = 1 | AVX = 1 | AVX2 = 1 | F16C = 1 | FMA = 1 | BMI2 = 1 | AVX512 = 1 | LLAMAFILE = 1 | OPENMP = 1 | REPACK = 1 | 
+0.08.147.419 I perplexity: saving all logits to /kaggle/temp/t4-engine/results/kld-base-v050.bin
+0.08.147.432 I perplexity: tokenizing the input ..
+0.09.568.493 I perplexity: tokenization took 1421.05 ms
+0.09.568.998 I perplexity: calculating perplexity over 8 chunks, n_ctx=512, batch_size=4, n_seq=1
+0.29.425.434 I perplexity: 19.61 seconds per pass - ETA 2.46.772.244 I Final estimate: PPL = 6.6544 +/- 0.36215

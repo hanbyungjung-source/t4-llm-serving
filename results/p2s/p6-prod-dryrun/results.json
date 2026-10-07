@@ -1,0 +1,236 @@
+{
+  "module_sha256": "2c7322d0a5f96de30d7e21cd83dff96f95cf814b7571a516233e0a14fb388d2e",
+  "command": [
+    "/kaggle/temp/t4-engine/prod/root/llama.cpp/build/bin/llama-server",
+    "--model",
+    "/kaggle/temp/t4-engine/prod/root/models/Qwen3.8-27B-UD-Q4_K_XL.gguf",
+    "--mmproj",
+    "/kaggle/temp/t4-engine/prod/root/models/mmproj-F16.gguf",
+    "--alias",
+    "qwen3.8-27b-ud-q4-k-xl",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "8080",
+    "--device",
+    "CUDA0,CUDA1",
+    "--split-mode",
+    "tensor",
+    "--n-gpu-layers",
+    "all",
+    "--fit",
+    "off",
+    "--ctx-size",
+    "196608",
+    "--parallel",
+    "1",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "128",
+    "--threads",
+    "4",
+    "--threads-batch",
+    "4",
+    "--flash-attn",
+    "on",
+    "--cache-type-k",
+    "q8_0",
+    "--cache-type-v",
+    "q8_0",
+    "--spec-type",
+    "draft-mtp",
+    "--spec-draft-n-max",
+    "3",
+    "--jinja",
+    "--chat-template-kwargs",
+    "{\"reasoning_effort\":\"xhigh\"}",
+    "--temp",
+    "1.0",
+    "--top-p",
+    "0.95",
+    "--top-k",
+    "20",
+    "--min-p",
+    "0.0",
+    "--n-predict",
+    "-1",
+    "--metrics",
+    "--verbosity",
+    "4"
+  ],
+  "samples": [
+    {
+      "name": "warmup",
+      "input_sha256": "bb58250d594b17270bb1282f3b6eb762efa1da8808b6d548a1e3258a5671ef9f",
+      "passed": true,
+      "seconds": 4.053584682999826,
+      "first_token_seconds": 2.749537908000093,
+      "usage": {
+        "completion_tokens": 49,
+        "prompt_tokens": 809,
+        "total_tokens": 858,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 809,
+        "prompt_ms": 2740.488,
+        "prompt_per_token_ms": 3.3875006180469716,
+        "prompt_per_second": 295.202898169961,
+        "predicted_n": 49,
+        "predicted_ms": 1303.135,
+        "predicted_per_token_ms": 27.148645833333333,
+        "predicted_per_second": 36.83424971319165,
+        "draft_n": 42,
+        "draft_n_accepted": 34
+      },
+      "answer_sha256": "623e298e3bc9c373ad5e8307e4e74650ff745c56ffad8f2e445866f4709e30f9",
+      "answer_text": null
+    },
+    {
+      "name": "copy",
+      "input_sha256": "ed6cfca4ef98c243b6897a9e516ac99f7d08712f9b1327465cce3b04795d6a53",
+      "passed": true,
+      "seconds": 6.923098688000209,
+      "first_token_seconds": 1.13665335099995,
+      "usage": {
+        "completion_tokens": 238,
+        "prompt_tokens": 953,
+        "total_tokens": 1191,
+        "prompt_tokens_details": {
+          "cached_tokens": 784
+        }
+      },
+      "timings": {
+        "cache_n": 784,
+        "prompt_n": 169,
+        "prompt_ms": 1126.336,
+        "prompt_per_token_ms": 6.664710059171598,
+        "prompt_per_second": 150.04403659298825,
+        "predicted_n": 238,
+        "predicted_ms": 5785.56,
+        "predicted_per_token_ms": 24.411645569620255,
+        "predicted_per_second": 40.96405533777197,
+        "draft_n": 189,
+        "draft_n_accepted": 175
+      },
+      "answer_sha256": "95774475043d03f4bae41eebee9668c3520a48cc529a867068301bbe30fc4c93",
+      "answer_text": null
+    },
+    {
+      "name": "arithmetic",
+      "input_sha256": "31b3fc273e5e0cb3b89a7d53db085ec003532a9971498ece22b57feefc3b7d5f",
+      "passed": true,
+      "seconds": 2.8613744670001324,
+      "first_token_seconds": 0.6830884219998552,
+      "usage": {
+        "completion_tokens": 74,
+        "prompt_tokens": 829,
+        "total_tokens": 903,
+        "prompt_tokens_details": {
+          "cached_tokens": 784
+        }
+      },
+      "timings": {
+        "cache_n": 784,
+        "prompt_n": 45,
+        "prompt_ms": 674.653,
+        "prompt_per_token_ms": 14.99228888888889,
+        "prompt_per_second": 66.70095589881021,
+        "predicted_n": 74,
+        "predicted_ms": 2177.504,
+        "predicted_per_token_ms": 29.828821917808217,
+        "predicted_per_second": 33.524622687260276,
+        "draft_n": 69,
+        "draft_n_accepted": 51
+      },
+      "answer_sha256": "fd1186e9c3cb9b5491435d8e0f018bf2bffe051e6744e69fd30082ba6690f5c4",
+      "answer_text": null
+    },
+    {
+      "name": "image",
+      "input_sha256": "189edc8ca5ce621180d1d6a4648602c69b3614994531ec1574fb175c842f472f",
+      "passed": true,
+      "seconds": 5.541282969999884,
+      "first_token_seconds": 3.8313095230005274,
+      "usage": {
+        "completion_tokens": 65,
+        "prompt_tokens": 1760,
+        "total_tokens": 1825,
+        "prompt_tokens_details": {
+          "cached_tokens": 784
+        }
+      },
+      "timings": {
+        "cache_n": 784,
+        "prompt_n": 976,
+        "prompt_ms": 3785.972,
+        "prompt_per_token_ms": 3.879069672131148,
+        "prompt_per_second": 257.79377132213335,
+        "predicted_n": 65,
+        "predicted_ms": 1709.086,
+        "predicted_per_token_ms": 26.70446875,
+        "predicted_per_second": 37.44691607092914,
+        "draft_n": 54,
+        "draft_n_accepted": 46
+      },
+      "answer_sha256": "0ef52325b67b8bedefb93e3f390c3be16ad4048283701d989b106f3ae6836464",
+      "answer_text": null
+    }
+  ],
+  "error": null,
+  "load_seconds": 9.679969271000118,
+  "unauthenticated": 401,
+  "gpu": {
+    "0": {
+      "samples": 101,
+      "max_used_mib": 14379.0,
+      "free_min_mib": 981.0,
+      "mean_util": 56.92079207920792,
+      "mean_sm_mhz": 1110.148514851485,
+      "min_sm_mhz": 300.0,
+      "max_power_w": 85.14,
+      "max_temp_c": 53.0
+    },
+    "1": {
+      "samples": 101,
+      "max_used_mib": 13187.0,
+      "free_min_mib": 2173.0,
+      "mean_util": 53.20792079207921,
+      "mean_sm_mhz": 1100.1980198019803,
+      "min_sm_mhz": 300.0,
+      "max_power_w": 78.57,
+      "max_temp_c": 54.0
+    }
+  },
+  "summary": {
+    "all_passed": true,
+    "scored_seconds": 15.325756125000225,
+    "decode_tps": 38.66772124088233,
+    "completion_tokens": [
+      238,
+      74,
+      65
+    ],
+    "prompt_tokens": [
+      953,
+      829,
+      1760
+    ],
+    "draft_n": 312,
+    "draft_accepted": 272,
+    "case_seconds": {
+      "copy": 6.923,
+      "arithmetic": 2.861,
+      "image": 5.541
+    },
+    "prompt_ms": {
+      "copy": 1126.336,
+      "arithmetic": 674.653,
+      "image": 3785.972
+    }
+  }
+}

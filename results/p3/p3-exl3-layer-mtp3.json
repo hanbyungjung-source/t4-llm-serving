@@ -1,0 +1,84 @@
+{
+  "args": {
+    "model_dir": "models/exl3-5.0",
+    "gpu_split": "14,15",
+    "load_metrics": false,
+    "override": null,
+    "tensor_parallel": false,
+    "moe_cpu_offload": 0,
+    "moe_cpu_split": 0,
+    "moe_cpu_threads": null,
+    "ngram_ram": false,
+    "tp_backend": "native",
+    "tp_max_parallelism_attn": null,
+    "tp_max_parallelism_mlp": null,
+    "tp_max_parallelism_moe": null,
+    "tp_max_parallelism_linear": null,
+    "tp_max_parallelism_linear_attn": null,
+    "tp_moe_tensor_split": false,
+    "swa_full": false,
+    "autosplit_max_batch_size": 1,
+    "chunk_size": 4096,
+    "load_verbose": false,
+    "autosplit_no_forward": false,
+    "no_warmup": false,
+    "layer_map": null,
+    "cache_size": 8192,
+    "cache_quant": "8",
+    "cache_compand_a": 0.0,
+    "cpu_cache_size": 0.0,
+    "recurrent_cache_size": 4.0,
+    "draft_model_dir": "models/exl3-5.0",
+    "num_draft_tokens": 3,
+    "mtp": true,
+    "ngram_match_min": 0,
+    "dynamic_draft": false,
+    "draft_confidence": 0.4,
+    "draft_moe_cpu_layers": 0,
+    "out": "results/p3-exl3-layer-mtp3.json",
+    "max_new": 320,
+    "prefill_repeat": 120
+  },
+  "load_seconds": 607.263115644455,
+  "gpu_used_after_load": [
+    14725,
+    5617
+  ],
+  "cases": {
+    "copy": {
+      "new_tokens": 186,
+      "time_prefill": 46.0428364276886,
+      "time_generate": 11.068691968917847,
+      "decode_tps": null,
+      "accepted": 137,
+      "rejected": 10,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\nThe user wants me to return exactly the records they specified, preserving every line and adding no other text. Let me simply output those lines exactly as given.\n</think>\n\nROW01:READY\nROW02:R"
+    },
+    "arithmetic": {
+      "new_tokens": 8,
+      "time_prefill": 1.1903095245361328,
+      "time_generate": 0.6389954090118408,
+      "decode_tps": null,
+      "accepted": 4,
+      "rejected": 8,
+      "eos_reason": "stop_string",
+      "text_head": "<think>\n\n</think>\n\n141"
+    }
+  },
+  "prefill_prompt_tokens": 1720,
+  "prefill": {
+    "new_tokens": 2,
+    "time_prefill": 14.16567873954773,
+    "time_generate": 0.16130304336547852,
+    "decode_tps": null,
+    "accepted": 1,
+    "rejected": 2,
+    "eos_reason": "max_new_tokens",
+    "text_head": "<think>\n\n"
+  },
+  "gpu_used_end": [
+    14745,
+    5625
+  ]
+}

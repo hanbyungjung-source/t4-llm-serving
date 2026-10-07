@@ -1,0 +1,90 @@
+ -- Loading models/exl3-5.0
+
+ -- Loading models/exl3-5.0
+
+ -- Warming up...
+
+ ## Synchronization timeout in kernel: pg_all_reduce_cpu_kernel
+
+ ## Synchronization timeout in kernel: pg_all_reduce_cpu_kernel
+
+ ## Synchronization timeout in kernel: pg_all_reduce_cpu_kernel
+
+ ## Synchronization timeout in kernel: pg_all_reduce_cpu_kernel
+
+ -- Loading tokenizer...
+Traceback (most recent call last):
+  File "/kaggle/temp/t4-engine/exl3_bench.py", line 71, in <module>
+    main()
+  File "/kaggle/temp/t4-engine/exl3_bench.py", line 57, in main
+    run(generator, sampler, chat('Say hello in one word.'), 16, stops)
+  File "/kaggle/temp/t4-engine/exl3_bench.py", line 30, in run
+    text, last = generator.generate(prompt=prompt, max_new_tokens=max_new, sampler=sampler,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/generator/generator.py", line 1628, in generate
+    raise r["error"]
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/generator/generator.py", line 534, in iterate
+    job.prefill(results)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/generator/job.py", line 1397, in prefill
+    self.generator.model.forward(input_ids = prefill_ids, params = params)
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model.py", line 393, in forward
+    y = self.forward_tp(x, params, self.last_kv_module_idx, self.modules)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp.py", line 669, in forward_tp
+    self.tp_worker_dispatch(device, mp_model_forward, args)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp.py", line 219, in tp_worker_dispatch
+    conn.send((fn, args))
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 567, in send
+    self.result = fn(self.local_context, *args)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 275, in mp_model_forward
+    x = module.forward(x, params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/transformer.py", line 159, in forward
+    y = self.attn.forward(y, params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/gated_delta_net.py", line 1206, in forward
+    self.tp_collect(params["backend"], x)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/module.py", line 97, in tp_collect
+    backend.all_reduce(x, contribution)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_backend.py", line 460, in all_reduce
+    ext.pg_all_reduce_cpu(
+RuntimeError: Synchronization timeout
+----------------------------------------
+ ## Exception in child process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 114, in mp_model_worker
+    result = func(local_context, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 275, in mp_model_forward
+    x = module.forward(x, params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/transformer.py", line 159, in forward
+    y = self.attn.forward(y, params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/gated_delta_net.py", line 1206, in forward
+    self.tp_collect(params["backend"], x)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/modules/module.py", line 97, in tp_collect
+    backend.all_reduce(x, contribution)
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_backend.py", line 460, in all_reduce
+    ext.pg_all_reduce_cpu(
+RuntimeError: Synchronization timeout
+
+----------------------------------------
+----------------------------------------
+ ## Exception in child process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 114, in mp_model_worker
+    result = func(local_context, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_fn.py", line 127, in mp_cpu_reduce
+    backend.run_cpu_reduce_jobs()
+  File "/usr/local/lib/python3.12/dist-packages/exllamav3/model/model_tp_backend.py", line 549, in run_cpu_reduce_jobs
+    ext.run_cpu_reduce_jobs(
+RuntimeError: CPU reduce wait timeout
+
+----------------------------------------
+ ## CPU reduce wait timeout

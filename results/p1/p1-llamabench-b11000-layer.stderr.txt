@@ -1,0 +1,4 @@
+ggml_cuda_init: found 2 CUDA devices (Total VRAM: 29823 MiB):
+  Device 0: Tesla T4, compute capability 7.5, VMM: yes, VRAM: 14911 MiB
+  Device 1: Tesla T4, compute capability 7.5, VMM: yes, VRAM: 14911 MiB
+llama_bench: error: failed to load model '/kaggle/temp/t4-engine/models/Qwen3.8-27B-UD-Q4_K_XL.gguf'

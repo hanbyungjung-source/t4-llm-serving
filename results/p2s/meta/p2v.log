@@ -1,0 +1,64 @@
+READY v050=0 models=0 requant=0 11:55:33
+PAUSED 122 11:55:34
+STAGE v050-layer
+CASE p2-v050-layer warmup 5.585 True
+CASE p2-v050-layer copy 11.071 True
+CASE p2-v050-layer arithmetic 6.442 True
+CASE p2-v050-layer image 8.513 True
+SUMMARY p2-v050-layer {"all_passed": true, "scored_seconds": 26.025741286000084, "decode_tps": 22.883701667581747, "completion_tokens": [238, 125, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 360, "draft_accepted": 312, "case_seconds": {"copy": 11.071, "arithmetic": 6.442, "image": 8.513}, "prompt_ms": {"copy": 1256.875, "arithmetic": 694.05, "image": 5253.23}} None
+STAGE_DONE v050-layer 0
+STAGE v050-tensor
+CASE p2-v050-tensor warmup 4.65 True
+CASE p2-v050-tensor copy 8.9 True
+CASE p2-v050-tensor arithmetic 3.87 True
+CASE p2-v050-tensor image 6.559 True
+SUMMARY p2-v050-tensor {"all_passed": true, "scored_seconds": 19.329098242999635, "decode_tps": 28.109213664825738, "completion_tokens": [238, 74, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 321, "draft_accepted": 274, "case_seconds": {"copy": 8.9, "arithmetic": 3.87, "image": 6.559}, "prompt_ms": {"copy": 1144.181, "arithmetic": 689.599, "image": 3981.82}} None
+STAGE_DONE v050-tensor 0
+STAGE v050-tensor-selfmtp
+CASE p2-v050-tensor-selfmtp warmup 4.626 True
+CASE p2-v050-tensor-selfmtp copy 8.758 True
+CASE p2-v050-tensor-selfmtp arithmetic 3.759 True
+CASE p2-v050-tensor-selfmtp image 6.53 True
+SUMMARY p2-v050-tensor-selfmtp {"all_passed": true, "scored_seconds": 19.04616036599964, "decode_tps": 29.007245442044713, "completion_tokens": [238, 74, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 321, "draft_accepted": 274, "case_seconds": {"copy": 8.758, "arithmetic": 3.759, "image": 6.53}, "prompt_ms": {"copy": 1167.468, "arithmetic": 695.842, "image": 4086.606}} None
+STAGE_DONE v050-tensor-selfmtp 0
+STAGE v050-tensor-headq40
+CASE p2-v050-tensor-headq40 warmup 4.932 True
+CASE p2-v050-tensor-headq40 copy 9.916 True
+CASE p2-v050-tensor-headq40 arithmetic 4.318 True
+CASE p2-v050-tensor-headq40 image 7.301 True
+SUMMARY p2-v050-tensor-headq40 {"all_passed": true, "scored_seconds": 21.53465342799973, "decode_tps": 24.694550298193228, "completion_tokens": [238, 74, 69], "prompt_tokens": [953, 829, 1760], "draft_n": 327, "draft_accepted": 272, "case_seconds": {"copy": 9.916, "arithmetic": 4.318, "image": 7.301}, "prompt_ms": {"copy": 1185.11, "arithmetic": 709.857, "image": 4267.414}} None
+STAGE_DONE v050-tensor-headq40 0
+TIMED 0 11:59:22
+STAGE kld-base
+STAGE_DONE kld-base 0
+STAGE kld-mmq1
+KLD p2-kld-mmq1 chunk             PPL               ln(PPL(Q)/PPL(base))          KL Divergence              Δp RMS            Same top p
+KLD p2-kld-mmq1 Mean PPL(Q)                   :   6.643518 ±   0.361326
+KLD p2-kld-mmq1 Mean PPL(base)                :   6.649306 ±   0.361179
+KLD p2-kld-mmq1 Mean PPL(Q)/PPL(base)         :   0.999130 ±   0.001497
+KLD p2-kld-mmq1 Mean PPL(Q)-PPL(base)         :  -0.005788 ±   0.009950
+KLD p2-kld-mmq1 Mean    KLD:   0.001791 ±   0.000109
+KLD p2-kld-mmq1 Maximum KLD:   0.150735
+KLD p2-kld-mmq1 99.9%   KLD:   0.053361
+KLD p2-kld-mmq1 99.0%   KLD:   0.016578
+KLD p2-kld-mmq1 Median  KLD:   0.000754
+KLD p2-kld-mmq1 Mean    Δp:  0.023 ± 0.026 %
+KLD p2-kld-mmq1 RMS Δp    :  1.159 ± 0.086 %
+KLD p2-kld-mmq1 Same top p: 98.039 ± 0.307 %
+STAGE_DONE kld-mmq1 0
+STAGE kld-b512
+KLD p2-kld-b512 chunk             PPL               ln(PPL(Q)/PPL(base))          KL Divergence              Δp RMS            Same top p
+KLD p2-kld-b512 Mean PPL(Q)                   :   6.637012 ±   0.361015
+KLD p2-kld-b512 Mean PPL(base)                :   6.649306 ±   0.361179
+KLD p2-kld-b512 Mean PPL(Q)/PPL(base)         :   0.998151 ±   0.001700
+KLD p2-kld-b512 Mean PPL(Q)-PPL(base)         :  -0.012294 ±   0.011301
+KLD p2-kld-b512 Mean    KLD:   0.001926 ±   0.000107
+KLD p2-kld-b512 Maximum KLD:   0.086217
+KLD p2-kld-b512 99.9%   KLD:   0.066223
+KLD p2-kld-b512 99.0%   KLD:   0.022387
+KLD p2-kld-b512 Median  KLD:   0.000789
+KLD p2-kld-b512 Mean    Δp:  0.053 ± 0.029 %
+KLD p2-kld-b512 RMS Δp    :  1.291 ± 0.101 %
+KLD p2-kld-b512 Same top p: 97.892 ± 0.318 %
+STAGE_DONE kld-b512 0
+KLD 0 12:05:00

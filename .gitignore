@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.gguf
+*.nsys-rep
+*.sqlite
+server/notebook_cell.py

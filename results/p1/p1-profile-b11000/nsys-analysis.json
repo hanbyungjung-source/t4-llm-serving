@@ -1,0 +1,127 @@
+{
+  "report": "copy.nsys-rep",
+  "window_ms": 10918.975,
+  "busy_ms": {
+    "0": 4305.978,
+    "1": 5735.664
+  },
+  "busy_fraction": {
+    "0": 0.3944,
+    "1": 0.5253
+  },
+  "both_busy_ms": 2.315,
+  "any_busy_ms": 10039.327,
+  "all_idle_ms": 879.648,
+  "kernel_count": {
+    "0": 92412,
+    "1": 82579
+  },
+  "kernel_ms": {
+    "0": {
+      "mmvq": 3322.895,
+      "mmq": 290.641,
+      "copy": 194.793,
+      "gdn": 187.275,
+      "quantize": 73.93,
+      "norm": 63.913,
+      "elementwise": 42.147,
+      "other": 36.234,
+      "fattn": 36.157,
+      "rope": 4.015
+    },
+    "1": {
+      "mmvq": 4841.948,
+      "mmq": 233.873,
+      "copy": 156.751,
+      "gdn": 141.99,
+      "other": 80.038,
+      "norm": 66.163,
+      "quantize": 65.362,
+      "fattn": 40.474,
+      "elementwise": 33.641,
+      "rope": 5.128
+    }
+  },
+  "copies": {
+    "0:HtoD": {
+      "count": 54,
+      "ms": 15.731,
+      "mib": 84.164
+    },
+    "0:DtoH": {
+      "count": 228,
+      "ms": 34.978,
+      "mib": 260.715
+    },
+    "0:PtoP": {
+      "count": 528,
+      "ms": 3.27,
+      "mib": 26.673
+    },
+    "1:DtoH": {
+      "count": 829,
+      "ms": 47.939,
+      "mib": 457.946
+    },
+    "1:HtoD": {
+      "count": 2355,
+      "ms": 20.137,
+      "mib": 120.382
+    },
+    "1:DtoD": {
+      "count": 378,
+      "ms": 2.221,
+      "mib": 179.04
+    }
+  },
+  "cuda_api_ms": {
+    "cudaStreamSynchronize": {
+      "count": 10640,
+      "ms": 8926.964
+    },
+    "cudaLaunchKernel": {
+      "count": 25726,
+      "ms": 603.351
+    },
+    "cudaGraphLaunch": {
+      "count": 248,
+      "ms": 354.414
+    },
+    "cudaMemcpyAsync": {
+      "count": 3988,
+      "ms": 195.342
+    },
+    "cudaGraphDestroy": {
+      "count": 67,
+      "ms": 5.563
+    },
+    "cudaGraphExecUpdate": {
+      "count": 67,
+      "ms": 4.335
+    },
+    "cudaMemsetAsync": {
+      "count": 756,
+      "ms": 3.83
+    },
+    "cudaEventSynchronize": {
+      "count": 1188,
+      "ms": 2.452
+    },
+    "cudaMemcpyPeerAsync": {
+      "count": 66,
+      "ms": 2.352
+    },
+    "cudaStreamWaitEvent": {
+      "count": 462,
+      "ms": 1.128
+    },
+    "cudaEventRecord": {
+      "count": 198,
+      "ms": 1.028
+    },
+    "cudaStreamEndCapture": {
+      "count": 67,
+      "ms": 1.027
+    }
+  }
+}
